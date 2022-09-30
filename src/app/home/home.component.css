@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+  text-align: center;
+}
+
+.mat-header-cell {
+  text-align: center;
+}
+
+.mat-column-childNumber {
+  width: 3%;
+}
+
+.mat-column-totalIncome {
+  width: 5%;
+}
+
+.mat-column-menu {
+  width: 2%;
+}
+
+.mat-column-firstName {
+  width: 10%;
+}
+
+.mat-column-lastName {
+  width: 10%;
+}

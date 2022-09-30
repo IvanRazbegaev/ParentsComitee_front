@@ -1,0 +1,37 @@
+<form [formGroup]="form">
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Табельный номер:</mat-label>
+      <input matInput formControlName="tableNum" type="text">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Фамилия ребенка:</mat-label>
+      <input matInput formControlName="lastName" type="text">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Имя ребенка:</mat-label>
+      <input matInput formControlName="firstName" type="text">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Сдано денег:</mat-label>
+      <input matInput formControlName="amount" type="text">
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Комментарии:</mat-label>
+      <input matInput formControlName="comments" type="text">
+    </mat-form-field>
+  </p>
+
+  <mat-dialog-actions align="end">
+    <button mat-button class="btn btn-primary" [mat-dialog-close]="false">Отмена</button>
+    <button mat-button class="btn btn-primary" [mat-dialog-close]="returnValue()" cdkFocusInitial>Редактировать</button>
+  </mat-dialog-actions>
+</form>
